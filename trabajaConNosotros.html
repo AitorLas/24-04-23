@@ -1,3 +1,86 @@
-<h1>
-    Trabaja con nosotros.
-</h1>
+
+<main>
+    <body>
+<section id="Trabaja con nosotros">
+    <h1>Buscamos personal para trabajar en el <a href="index.html">Restaurante Orenga</a></h1>
+    <form  action="enviar.html" method="post">
+        <fieldset>
+          <legend>Haga su reserva para tener garantizada una experiencia inolvidable en el Restaurant Orenga</legend>
+          <p>
+        
+            <label for="name">Nombre</label>
+            <input placeholder="Ana" type="text"   id="name" name="name" size="30" required>
+          </p>
+          <p>
+        
+                <label for="surname">Apellido(s)</label>
+                <input placeholder="Robira Blanca" type="text"   id="name" name="name" size="50" required>
+          </p>
+          <p>
+            <label for="phone_number">Teléfono</label>
+            <input placeholder="+34 643 423 521" type="number"   id="name" name="phone_number" size="15" required>
+          </p>
+          <p>
+            <label for="email">Correo electrónico</label>
+            <input placeholder="nom@outlook.com" type="email"   id="name" name="email" size="60" required>
+          </p>
+          <p>
+            <label for="number">Número de comensales (1-50)</label>
+            <input placeholder=" 0" type="number"   id="comensales" name="comensales" min="1" max="50" size="5" value="4" required>
+          </p>
+          <p>
+            <label for="edad">¿Existe uno o más de un comensal menor de 5 años?</label><br>
+            <input  type="radio"  name="edad" size="5">Si</input><br>
+            <input  type="radio"  name="edad" size="5">No</input>
+          </p>
+<p>
+<label for="start">Día:</label>
+
+<input type="date" id="fecha" name="fecha"  required>
+</p>
+<p>
+<label for="hora">Hora:</label>
+<input list="horas"   type="time" id="hora" name="fecha" value="4" required>
+<datalist id="horas">
+<option value="13:00"></option><br>
+<option value="14:00"></option><br>
+<option value="15:00"></option><br>
+<option value="20:00"></option><br>
+<option value="21:00"></option><br>
+<option value="22:00"></option><br>
+<option value="Otras..."></option><br>
+</datalist>
+</p>
+<p>
+<form>
+Ubicación del restaurante:
+<select>
+<optgroup label="Interior"></option><br>
+    <option>Sala México</option> <br>
+    <option>Sala Argentina</option> <br>
+    <option>Sala Franca</option> <br>
+    <optgroup label="Exterior"></option><br>
+    <option>Terraza con Vistas a Barcelona</option><br>
+    <option>Terraza con Vistas a Sant Cugat</option><br>
+    <option selected>Terraza con Vistas a Llac</option><br>
+</select>
+</form>
+<p>
+Idioma en el que prefiere ser atendido
+</p>
+
+<p>
+<textarea  placeholder="Uno de los comensales es intolerante a la lactosa." name="Comentarios a tener en consideración:" id="comentarios" cols="40" rows="10"></textarea>
+</p>
+
+          <p>
+            
+            <input  value="Reservar"  name="Reservar" type="submit" name="reservar" id="enviar">
+          </p>
+        </fieldset>
+      </form>
+      
+</section>
+<section>
+</body>
+</main>
