@@ -1,0 +1,54 @@
+dt {
+  font-weight: bold;
+}
+
+dl,
+dd {
+  font-size: 0.9rem;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+.logo {
+  width: 22px;
+  height: 22px;
+  float: left;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  width: 32px;
+  height: 32px;
+}
+
+#logos-redes {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  object-fit: cover;
+}
+
+.logo-principal {
+  width: 90px;
+  margin-bottom: 2px;
+  margin-right: 20px;
+}
+.logo {
+  width: 25px;
+  height: 25px;
+}
+
+#logos-redes {
+  width: 180px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+.redes-sociales {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  object-fit: cover;
+}
