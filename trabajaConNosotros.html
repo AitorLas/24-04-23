@@ -7,7 +7,6 @@
         <fieldset>
           <legend>Haga su reserva para tener garantizada una experiencia inolvidable en el Restaurant Orenga</legend>
           <p>
-        
             <label for="name">Nombre</label>
             <input placeholder="Ana" type="text"   id="name" name="name" size="30" required>
           </p>
@@ -24,58 +23,50 @@
             <label for="email">Correo electrónico</label>
             <input placeholder="nom@outlook.com" type="email"   id="name" name="email" size="60" required>
           </p>
-          <p>
-            <label for="number">Número de comensales (1-50)</label>
-            <input placeholder=" 0" type="number"   id="comensales" name="comensales" min="1" max="50" size="5" value="4" required>
-          </p>
-          <p>
-            <label for="edad">¿Existe uno o más de un comensal menor de 5 años?</label><br>
-            <input  type="radio"  name="edad" size="5">Si</input><br>
-            <input  type="radio"  name="edad" size="5">No</input>
-          </p>
+          <form>
+            Cargos vacantes a los que aspiras (tencla Ctrl para selecionar más de uno):<br>
+            <select multiple required>
+                <option>Jefe de cocina</option> <br>
+                <option>Chef</option> <br>
+                <option selected>Cocinero/a</option> <br>
+                <option>Ayudante de cocinero/a</option><br>
+                <option>Jefe de sala</option><br>
+                <option>Camarero/a</option><br>
+            </select>
+            </form> 
+
+            <form>
+                <br>
+            <label>Curriculum</label>
+          <form name="curriculum" method="post"  enctype="multipart/form-data" >
+
+            <input type="file" name="adjunto" accept=".pdf" required />
+          </form>
+
+        </form>
+
+        
+            <form>
+        <label>Enlace a tu perfil de LinkedIn</label>
+        <input type="url">
+    </form>
+       
 <p>
-<label for="start">Día:</label>
+<label for="start">A partir de que día puedes incorporarte:</label>
 
 <input type="date" id="fecha" name="fecha"  required>
 </p>
-<p>
-<label for="hora">Hora:</label>
-<input list="horas"   type="time" id="hora" name="fecha" value="4" required>
-<datalist id="horas">
-<option value="13:00"></option><br>
-<option value="14:00"></option><br>
-<option value="15:00"></option><br>
-<option value="20:00"></option><br>
-<option value="21:00"></option><br>
-<option value="22:00"></option><br>
-<option value="Otras..."></option><br>
-</datalist>
-</p>
-<p>
-<form>
-Ubicación del restaurante:
-<select>
-<optgroup label="Interior"></option><br>
-    <option>Sala México</option> <br>
-    <option>Sala Argentina</option> <br>
-    <option>Sala Franca</option> <br>
-    <optgroup label="Exterior"></option><br>
-    <option>Terraza con Vistas a Barcelona</option><br>
-    <option>Terraza con Vistas a Sant Cugat</option><br>
-    <option selected>Terraza con Vistas a Llac</option><br>
-</select>
-</form>
-<p>
-Idioma en el que prefiere ser atendido
-</p>
 
-<p>
-<textarea  placeholder="Uno de los comensales es intolerante a la lactosa." name="Comentarios a tener en consideración:" id="comentarios" cols="40" rows="10"></textarea>
-</p>
-
-          <p>
+<dvi>
+    <form name="formulario" >
+    <label> Acepto la política de privacidad al enviar este formulario</label>
+   
+    <input type="checkbox" name="politica_privacidad" required/>
+       
+      </form>
+    </div>
             
-            <input  value="Reservar"  name="Reservar" type="submit" name="reservar" id="enviar">
+            <input  value="Enviar"  name="Enviar" type="submit" name="reservar" id="enviar">
           </p>
         </fieldset>
       </form>
