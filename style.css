@@ -41,6 +41,33 @@ nav a:hover {
 mark {
   background-color: #d7dbd2e0;
 }
+dl {
+  
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  margin-left: 20px;
+}
+dt {
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+dd {
+ 
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+#foto-texto-pizzas{
+  display: flex;
+  
+}
+
+
+
+
+
+
 
 
 .logo {
