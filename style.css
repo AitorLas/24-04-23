@@ -1,3 +1,46 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  letter-spacing: 5px;
+}
+h2 {
+  margin-top: 80px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
+  color: #829170;
+}
+h2::first-letter {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.5em;
+}
+header {
+  text-align: center;
+}
+nav a {
+  color: #829170;
+  font-size: 20px;
+  text-decoration: none;
+  padding-right: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+#el-restaurante {
+  line-height: 2;
+}
+mark {
+  background-color: #d7dbd2e0;
+}
 
 
 .logo {
