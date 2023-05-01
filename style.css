@@ -58,7 +58,7 @@ dd {
   margin-left: 0;
   margin-bottom: 15px;
 }
-#foto-texto-pizzas{
+.foto-texto-pizzas{
   display: flex;
   
 }
@@ -92,6 +92,25 @@ input[type="submit"] {
 
 footer address {
   margin-bottom: 40px;
+}
+footer a {
+  color:  #829170;
+}
+.copyright, .inicios {
+  margin-bottom: 40px;
+}
+.copyright strong {
+  font-size: 12px;
+}
+.copyright small {
+  font-size: 10px;
+}
+details ul {
+  font-size: 14px;
+
+}
+details ul li {
+  margin-bottom: 10px;
 }
 
 
