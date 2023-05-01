@@ -62,6 +62,36 @@ dd {
   display: flex;
   
 }
+input, select, textarea {
+  border: 1.5px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  
+}
+/* Selector d'atribut per input 
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+ Selector simple per select 
+select:focus,
+ Selector simple per textarea 
+textarea:focus {
+  background-color: #d7dbd2e0;
+}
+*/
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus, 
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+  background-color: #d7dbd2e0;
+}
 
 
 
