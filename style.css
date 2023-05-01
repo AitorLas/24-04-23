@@ -92,6 +92,12 @@ select:focus,
 textarea:focus {
   background-color: #d7dbd2e0;
 }
+input[type="submit"] {
+  padding: 10px;
+  background-color: #d7dbd2e0;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 
 
