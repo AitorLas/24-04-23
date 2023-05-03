@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante Orenga</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/styles/style.css">
+	<script src="../scripts/index.js" defer></script>
   </head>
 </html>
 
@@ -153,8 +154,13 @@ embutidos picantes y mozzarella.
 				  </p>
 				  <p>
 					<label for="number">Número de comensales (1-50)</label>
-					<input placeholder=" 0" type="number"   id="comensales" name="comensales" min="1" max="50" size="5" value="4" required>
-				  </p>
+					<input placeholder=" 0" type="number"   id="comensales" name="comensales" min="1" max="50" step="1" size="5" value="4" required>
+					<small>
+						<span>(Precio total aproximado es de 50€/persona sería de </span>
+						<output for="numeroComensals" id="preuAproximat">200</output>
+						<span>€)</span>
+					  </small>
+				</p>
 				  <p>
 					<label for="edad">¿Existe uno o más de un comensal menor de 5 años?</label><br>
 					<input  type="radio"  name="edad" size="5">Si</input><br>
