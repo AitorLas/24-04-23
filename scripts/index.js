@@ -30,43 +30,26 @@
   }
 
   function afegeixEsdevenimentEnviamentFormulari() {
-   
-      const reservas = document.getElementById("reservas");
-      reservas.addEventListener('submit', function(event) {
+    const reservas = document.getElementById("reservas");
+    reservas.addEventListener('submit', function(event) {
 
-        event.preventDefault();
+      event.preventDefault();
 
-        const comensalesMenores = document.getElementById("edad").value;
-        const salaSeleccionada = document.getElementById("salas").value;
-    
+      const comensalesMenores = document.getElementById("edad").value;
+      const salaSeleccionada = document.getElementById("salas").value;
+  
 
-        if (comensalesMenores === "Si" && salaSeleccionada === "Sala México") {
-    
-          alert("No es posible hacer una reserva si hay menores de 5 años y la ubicación elegida es la Sala México, ya que no está suficientemente habilitada.");
-        } else {
-       
-          reservas.submit();
-        }
-      });
-    }
-    
-    // Agrega el listener al evento submit del formulario
-    afegeixEsdevenimentEnviamentFormulari();
-    
+      if (comensalesMenores === "Si" && salaSeleccionada === "Sala México") {
+  
+        alert("No es posible hacer una reserva si hay menores de 5 años y la ubicación elegida es la Sala México, ya que no está suficientemente habilitada.");
+      } else {
+     
+        reservas.submit();
+      }
+    });
 
   }
-    /*const  seccionReservas = document.getElementById("reservas");
-    const respuestaEdad = seccionReservas.getElementById("edad").value;
-    const salaSeleccionada = document.getElementById('salas').value;
 
-      if (respuestaEdad === 'Si' && salaSeleccionada === 'Sala México') {
-        event.preventDefault();
-        alert('Texto de la ventana emergente');
-      }
-    }
-    
-    const formulario = document.querySelector('form');
-    formulario.addEventListener('submit', comprobarReserva);*/
     
   
 
