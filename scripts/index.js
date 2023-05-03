@@ -81,6 +81,12 @@
   }
 
   function estableixFormatDosDigits(valor) {
-    // Afegeix aquí el teu codi
+   
+      if (valor < 10) {
+        return "0" + valor;
+      }
+      return valor;
+    }
+    
   }
-})();
+)();
