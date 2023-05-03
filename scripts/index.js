@@ -20,7 +20,13 @@
 
   /***** Reserves *****/
   function afegeixEsdevenimentCanviNumeroComensals() {
-    // Afegeix aquí el teu codi
+    const inputComensales = document.getElementById("comensales"); 
+    const outputPreuAproximat = document.getElementById("preuAproximat");
+    inputComensales.addEventListener("change", function(event) {
+      const PRECIO_MEDIO_EUROS = 50;
+      outputPreuAproximat.textContent = PRECIO_MEDIO_EUROS * inputComensales.valueAsNumber;
+    }) 
+
   }
 
   function afegeixEsdevenimentEnviamentFormulari() {
